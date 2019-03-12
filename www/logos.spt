@@ -4,4 +4,32 @@
 
 % block content
 
+    <div class="section text-center">
+        <h1>{{ _(
+            "Liberapay logos"
+        ) }}</h1>
+        <br>
+
+        <p>{{ _(
+            "We've put together some assets so you can link to your Liberapay profile in a nice way:"
+        ) }}</p>
+        <br>
+
+        <div class="card card-default card-md text-center">
+            <p><img src="{{ website.asset('liberapay/icon-v2_yellow-r.svg') }}" height=200 width=200 /></p>
+
+            <p><a class="btn btn-lg" href="{{ website.asset('liberapay/logo_yellow.zip') }}">
+                {{ fontawesome('download') }}&nbsp; {{ _( "Download our yellow logo" ) }}
+            </a></p>
+        </div>
+
+        <div class="card card-default card-md text-center">
+            <p><img src="{{ website.asset('liberapay/icon-v2_black.svg') }}" height=200 width=200 /></p>
+
+            <p><a class="btn btn-lg" href="{{ website.asset('liberapay/logo_black.zip') }}">
+                {{ fontawesome('download') }}&nbsp; {{ _( "Download our black logo" ) }}
+            </a></p>
+        </div>
+    </div>
+
 % endblock
