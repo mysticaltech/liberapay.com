@@ -44,6 +44,14 @@
                 <li>{{ _( "PNG (200 x 200 pixels)") }}</li>
             </ul>
         </div>
+
+        <p>{{ _(
+            "You can also link directly to our {0}Github repository{1}.",
+            '<a href="https://github.com/liberapay/liberapay.com/tree/master/www/assets/liberapay">'|safe,
+            '</a>'|safe
+        ) }}</p>
+
+        <p>Copyright Liberapay &reg; 2019</p>
     </div>
 
 % endblock
